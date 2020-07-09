@@ -1,0 +1,13 @@
+n = int(input("Enter a number : "))
+
+b = [int(i) for i in list('{0:0b}'.format(n))]
+print(b)
+n = int(input("Enter the ith bit: "))
+i = n-1
+if n>len(b):
+    print("Incorrect input")
+else:
+    if b[i]==1:
+        print("Set")
+    else:
+        print("Reset")
