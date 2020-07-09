@@ -1,0 +1,8 @@
+n = int(input("Enter a number : "))
+
+d = [int(i) for i in list('{0:0b}'.format(n))]
+print(d)
+
+a = d.count(1)
+
+print("The number of ones in the binary representation of ",n," is ",a)
