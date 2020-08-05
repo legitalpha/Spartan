@@ -1,5 +1,5 @@
 lst = []
-d = 0
+numberToBeSearched = 0
 def createList(lst,d):
 
     elementsInList = int(input("Enter the number of elements in the list : "))
@@ -13,12 +13,12 @@ def createList(lst,d):
 
     print(lst)
 
-    d = int(input("Enter a number to search in the list : "))
-    if d in lst:
+    numberToBeSearched = int(input("Enter a number to search in the list : "))
+    if numberToBeSearched in lst:
         print(True)
-        index = lst.index(d)
-        print("Index of ",d,"is ",index)
+        index = lst.index(numberToBeSearched)
+        print("Index of ",numberToBeSearched,"is ",index)
     else:
         print(False)
 
-createList(lst,d)
+createList(lst,numberToBeSearched)
