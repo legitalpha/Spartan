@@ -1,6 +1,6 @@
 lst = []
 numberToBeSearched = 0
-def createList(lst,d):
+def createList(lst,numberToBeSearched):
 
     elementsInList = int(input("Enter the number of elements in the list : "))
     if elementsInList<=0:
