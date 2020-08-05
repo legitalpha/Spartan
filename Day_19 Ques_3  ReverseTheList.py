@@ -13,7 +13,6 @@ print(lst)
 
 def reverseList(lst):
 
-    newList = lst[-1]
     newList = []
     for ele in lst:
         newList.append(ele)
