@@ -1,0 +1,28 @@
+input_array = []
+n = int(input("Enter the length of the list: "))
+
+for i in range (0,n):
+    ele = int(input())
+    input_array.append(ele)
+input_array.sort()
+print("Your list is: ", input_array)
+print("Your sorted list is:",input_array)
+
+value = int(input("Enter the number to be searched in the list: "))
+
+def binary_search(input_array, value):
+    low = 0
+    high = len(input_array) -1
+    while (low <= high):
+        mid = (low+high)//2
+        if (input_array[mid] == value):
+            return mid
+        elif (input_array[mid]< value ):
+            low = mid+1
+        else:
+            high = mid-1
+    return "Value not found in the list"
+
+result = binary_search(input_array, value)
+
+print("Element",input_array[result],"found in the list")
