@@ -21,8 +21,11 @@ def binary_search(input_array, value):
             low = mid+1
         else:
             high = mid-1
-    return "Value not found in the list"
+    return -1
 
 result = binary_search(input_array, value)
 
-print("Element",input_array[result],"found in the list")
+if result == -1:
+    print("Element not found in the list")
+else:
+    print("Element", input_array[result], "found in the list")
