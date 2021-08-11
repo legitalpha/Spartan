@@ -1,3 +1,5 @@
+#This programme is only applicable when n(skipping sequence) = 2.
+
 x = int(input("Enter a number : "))
 def josephusProblem(x):
     y = bin(x)
